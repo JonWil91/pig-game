@@ -1,2 +1,2 @@
-# pig-game-javascript
+# pig-game
 A two player numbers game, each player rolls the dice to reach the target score first
