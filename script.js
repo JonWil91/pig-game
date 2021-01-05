@@ -36,12 +36,16 @@ btnRoll.addEventListener('click', function () {
         // Dynamically select the current active player and add to their current score
         document.querySelector(`#current--${activePlayer}`).textContent = currentScore;
     } else {
+        document.querySelector(`#current--${activePlayer}`).textContent = 0;
+        currentScore = 0;
         // Switch player
         if (activePlayer === 0) {
             activePlayer = 1;
         } else {
             activePlayer = 0;
         }
+        player0El.classList.toggle('player--active');
+        player1El.classList.toggle('player--active');
     }
 });
 
